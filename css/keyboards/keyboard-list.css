@@ -1,0 +1,82 @@
+.keyboard-list {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.keyboard-list h2 {
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.keyboard-list-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20px 20px 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: auto;
+}
+
+.keyboard-list-items li {
+  min-width: 300px;
+}
+
+.keyboard-list a {
+  display: block;
+}
+
+.keyboard-list img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+
+.keyboard-list h3 {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: end;
+  position: relative;
+}
+
+.keyboard-list h3::before {
+  content: "";
+  height: 3px;
+  width: 5%;
+  background-color: var(--color-p1);
+  position: absolute;
+  transition: 0.3s;
+}
+
+.keyboard-list a:hover h3::before {
+  width: 10%;
+}
+
+@media (max-width: 1200px) {
+  .keyboard-list-items {
+    justify-content: start;
+  }
+
+  .keyboard-list img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .keyboard-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .keyboard-list-items {
+    gap: 20px;
+  }
+}
