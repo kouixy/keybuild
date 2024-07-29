@@ -5,6 +5,7 @@
 @import "./utility/components.css";
 @import "./utility/typograph.css";
 @import "./utility/colors.css";
+@import "./utility/container.css";
 
 /* Home */
 @import "./home/hero.css";
