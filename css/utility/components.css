@@ -9,10 +9,21 @@
   font:
     500 1.125rem/1.35 "Inter",
     sans-serif;
+  max-width: max-content;
 }
 
 .button:hover {
   background: linear-gradient(var(--color-p1), var(--color-p2));
+}
+
+.button.secondary {
+  background: var(--color-10);
+  color: var(--color-2);
+}
+
+.button.secondary:hover {
+  background: var(--color-9);
+  color: var(--color-2);
 }
 
 @media (max-width: 600px) {
