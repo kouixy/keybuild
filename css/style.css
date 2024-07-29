@@ -1,4 +1,6 @@
+/* Layout */
 @import "./layout/header.css";
+@import "./layout/footer.css";
 @import "./layout/reset.css";
 
 /* Utility */
@@ -9,8 +11,10 @@
 
 /* Home */
 @import "./home/hero.css";
-@import "./keyboards/keyboard-list.css";
 @import "./home/customize.css";
 @import "./home/partners.css";
 @import "./home/review.css";
+
+/* Articles */
+@import "./keyboards/keyboard-list.css";
 @import "./subscription/subscription.css";

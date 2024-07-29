@@ -32,7 +32,7 @@
 
 @media (max-width: 800px) {
   .hero-bg {
-    background-color: var(--color-11);
+    background-color: var(--color-12);
   }
   .hero {
     grid-template-columns: 1fr;
