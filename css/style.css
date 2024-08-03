@@ -18,6 +18,7 @@
 /* Keyboards */
 @import "./keyboards/keyboard-list.css";
 @import "./keyboards/keyboards.css";
+@import "./keyboard/keyboard.css";
 
 /* Subscription */
 @import "./subscription/subscription.css";
