@@ -1,0 +1,77 @@
+.keyboards-bg:nth-child(odd) {
+  background: linear-gradient(to right, white 30%, var(--color-11) 0%);
+  margin-bottom: 60px;
+}
+
+.keyboards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.keyboards-image {
+  position: relative;
+}
+
+.keyboards-image img {
+  border-radius: 5px;
+}
+
+.keyboards-image span {
+  display: inline-block;
+  background-color: var(--color-10);
+  padding: 8px 16px 8px 8px;
+  position: absolute;
+  top: 20;
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.1);
+}
+
+.keyboards-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: center;
+  gap: 20px;
+}
+
+.keyboards h2,
+.keyboards p {
+  grid-column: 1/-1;
+}
+
+.keyboards h2 {
+  margin-bottom: 20px;
+}
+
+.keyboards h2::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 8px;
+  background-color: var(--color-p0);
+  margin-bottom: 8px;
+}
+
+.keyboards p {
+  margin-bottom: 32px;
+}
+
+.keyboards a {
+  justify-self: start;
+  place-self: start;
+}
+
+@media (max-width: 800px) {
+  .keyboards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .keyboards-bg:nth-child(odd) {
+    background: var(--color-11);
+  }
+}

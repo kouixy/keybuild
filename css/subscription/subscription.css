@@ -12,6 +12,10 @@
   justify-content: center;
 }
 
+#subscriptions .subscriptions {
+  padding-top: 0px;
+}
+
 .subscriptions h2 {
   grid-column: 1/-1;
 }
@@ -21,6 +25,7 @@
   padding: 24px 24px 24px 54px;
   display: grid;
   grid-template-columns: 1fr auto;
+  border-radius: 5px;
 }
 
 .subscriptions-item h3 {

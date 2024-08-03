@@ -15,9 +15,14 @@
 @import "./home/partners.css";
 @import "./home/review.css";
 
-/* Articles */
+/* Keyboards */
 @import "./keyboards/keyboard-list.css";
-@import "./subscription/subscription.css";
+@import "./keyboards/keyboards.css";
 
-/* pages */
+/* Subscription */
+@import "./subscription/subscription.css";
+@import "./subscription/questions.css";
+@import "./subscription/benefits.css";
+
+/* Terms */
 @import "./terms/terms.css";
