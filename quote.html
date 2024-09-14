@@ -1,0 +1,275 @@
+<!DOCTYPE html5>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Terms and Conditions" />
+    <title>Request a Quote | Keybuild</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="quote">
+    <header class="header-bg">
+      <div class="header container">
+        <h1 class="logo"><a href="./">Keybuild</a></h1>
+        <nav aria-label="primary">
+          <ul class="header-menu font-1-m color-0">
+            <li><a href="./keyboards.html">Keyboard</a></li>
+            <li><a href="./switches.html">Switches</a></li>
+            <li><a href="./keycaps.html">Keycaps</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="title-bg">
+        <div class="title container">
+          <p class="font-2-l-b color-5">Get a quote in your e-mail</p>
+          <h1 class="font-1-2xl color-0">
+            Request a quote<span class="color-p0">.</span>
+          </h1>
+        </div>
+      </div>
+      <form action="./" class="quote container">
+        <div class="quote-product">
+          <h2 class="font-1-xs color-5">Keyboard or Subscription</h2>
+          <input type="radio" name="type" value="keyboard" id="keyboard" />
+          <label for="keyboard">Keyboard</label>
+          <input
+            type="radio"
+            name="type"
+            value="subscription"
+            id="subscription"
+          />
+          <label for="subscription">Subscription</label>
+
+          <div class="quote-content" id="quote-keyboard">
+            <h2 class="font-1-s color-0">Choose your Keyboard</h2>
+            <input
+              type="radio"
+              name="product"
+              value="keyboard1"
+              id="keyboard1"
+            />
+            <label for="keyboard1">Keyboard1 <span>$ 199</span></label>
+            <div class="quote-detail">
+              <ul>
+                <li><img src="./img/icons/eletrica.svg" alt="" />1200vw</li>
+                <li>
+                  <img src="./img/icons/carbono.svg" alt="" />Carbon Resistence.
+                </li>
+                <li>
+                  <img src="./img/icons/velocidade.svg" alt="" />Type faster!
+                </li>
+                <li><img src="./img/icons/rastreador.svg" alt="" />Delivery</li>
+              </ul>
+              <img src="./img/keyboard-list-1.jpg" alt="keyboard1" />
+            </div>
+
+            <input
+              type="radio"
+              name="product"
+              value="keyboard2"
+              id="keyboard2"
+            />
+            <label for="keyboard2">Keyboard2 <span>$ 199</span></label>
+            <div class="quote-detail">
+              <ul>
+                <li><img src="./img/icons/eletrica.svg" alt="" />1200vw</li>
+                <li>
+                  <img src="./img/icons/carbono.svg" alt="" />Carbon Resistence.
+                </li>
+                <li>
+                  <img src="./img/icons/velocidade.svg" alt="" />Type faster!
+                </li>
+                <li><img src="./img/icons/rastreador.svg" alt="" />Delivery</li>
+              </ul>
+              <img src="./img/keyboard-list-2.jpg" alt="keyboard2" />
+            </div>
+
+            <input
+              type="radio"
+              name="product"
+              value="keyboard3"
+              id="keyboard3"
+            />
+            <label for="keyboard3">Keyboard3 <span>$ 199</span></label>
+            <div class="quote-detail">
+              <ul>
+                <li><img src="./img/icons/eletrica.svg" alt="" />1200vw</li>
+                <li>
+                  <img src="./img/icons/carbono.svg" alt="" />Carbon Resistence.
+                </li>
+                <li>
+                  <img src="./img/icons/velocidade.svg" alt="" />Type faster!
+                </li>
+                <li><img src="./img/icons/rastreador.svg" alt="" />Delivery</li>
+              </ul>
+              <img src="./img/keyboard-list-m.jpg" alt="keyboard3" />
+            </div>
+          </div>
+
+          <div class="quote-content" id="quote-subscription">
+            <h2 class="font-1-s color-0">Choose your Subscription</h2>
+            <input
+              type="radio"
+              name="product"
+              value="subscription1"
+              id="subscription1"
+            />
+            <label for="subscription1">Subscription1<span>$ 19</span></label>
+
+            <input
+              type="radio"
+              name="product"
+              value="subscription2"
+              id="subscription2"
+            />
+            <label for="subscription2">Subscription2<span>$ 20</span></label>
+          </div>
+        </div>
+        <div class="quote-data form">
+          <h2 class="font-1-xs color-9 col-2">Pessoal Information</h2>
+          <div>
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+          </div>
+          <div>
+            <label for="surname">Last name</label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Your surname"
+            />
+          </div>
+          <div class="col-2">
+            <label for="document">Document</label>
+            <input
+              type="text"
+              id="document"
+              name="document"
+              placeholder="000.000.000-00"
+            />
+          </div>
+          <div class="col-2">
+            <label for="email">E-mail</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="example@mail.com"
+            />
+          </div>
+          <h2 class="font-1-xs color-9 col-2">delivery</h2>
+          <div>
+            <label for="postal">Postal code</label>
+            <input
+              type="text"
+              id="postal"
+              name="postal"
+              placeholder="000.000-00"
+            />
+          </div>
+          <div>
+            <label for="number">Number</label>
+            <input type="text" id="number" name="number" placeholder="00" />
+          </div>
+          <div>
+            <label for="district">District</label>
+            <input
+              type="text"
+              id="district"
+              name="district"
+              placeholder="Center"
+            />
+          </div>
+          <div>
+            <label for="contry">Country</label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Brazil"
+            />
+          </div>
+          <div>
+            <label for="state">State</label>
+            <input
+              type="text"
+              id="state"
+              name="state"
+              placeholder="Rio de Janeiro"
+            />
+          </div>
+          <div>
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Copacabana" />
+          </div>
+          <div class="terms-accept col-2">
+            <input type="checkbox" name="terms" id="terms" value="terms" />
+            <label for="terms"
+              >I read and accept the
+              <a href="./terms.html" class="terms-accept-link"
+                >terms and conditions</a
+              >.</label
+            >
+          </div>
+          <button class="button col-2">Request Quote</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="footer-bg">
+      <div class="footer container">
+        <h1 class="logo">Keybuild</h1>
+        <div class="footer-contact">
+          <h3 class="font-2-l-b color-0">Contact</h3>
+          <ul class="font-2-m color-5">
+            <li><a href="tel:+555599999999">+55 62 9999-9999</a></li>
+            <li>
+              <a href="mailto:contato@keybuild.com">contato@keybuild.com</a>
+            </li>
+            <li>Some Address, 69 - Center</li>
+            <li>Goiania - Brazil</li>
+          </ul>
+          <div class="footer-social">
+            <a href="./">
+              <img src="./img/icons/instagram.svg" alt="Instagram" />
+            </a>
+
+            <a href="./">
+              <img src="./img/icons/facebook.svg" alt="Facebook" />
+            </a>
+
+            <a href="./">
+              <img src="./img/icons/youtube.svg" alt="Youtube" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-info">
+          <h3 class="font-2-l-b color-0">Informations</h3>
+          <nav>
+            <ul class="font-1-m color-5">
+              <li><a href="./keyboards.html">Keyboard</a></li>
+              <li><a href="./switches.html">Switches</a></li>
+              <li><a href="./keycaps.html">Keycaps</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./terms.html">Terms and Conditions</a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="footer-copy font-2-s color-6">
+          All rights reserved © 2024 Keybuild
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

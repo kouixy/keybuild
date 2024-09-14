@@ -1,0 +1,196 @@
+#quote {
+  background: linear-gradient(var(--color-11) 600px, var(--color-1) 0px);
+}
+
+.quote {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-top: 50px;
+}
+
+.quote h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.quote h2::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  background-color: var(--color-p1);
+  position: absolute;
+  left: -12px;
+}
+
+.quote-product,
+.quote-data {
+  padding: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.quote-product {
+  border-radius: 5px 0 0 5px;
+  background: var(--color-12) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 20px left 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-content: start;
+}
+
+.quote-product > * {
+  grid-column: 1/-1;
+}
+
+.quote-product > label {
+  grid-column: initial;
+}
+
+.quote-product label {
+  font:
+    400 1rem/1.5 "Inter",
+    sans-serif;
+  color: var(--color-4);
+  background-color: var(--color-10);
+  display: block;
+  padding: 12px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.quote-product label::before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--color-6);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.quote-product input:checked + label::before {
+  border-color: var(--color-7);
+  box-shadow:
+    inset 0 0 0 2px var(--color-0),
+    inset 0 0 0 7px var(--color-11);
+}
+
+.quote-product label:hover {
+  background-color: var(--color-9);
+}
+
+.quote-product input:focus + label {
+  box-shadow: 0 0 0 2px var(--color-p1);
+}
+
+.quote-product input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.quote-product input:checked + label {
+  background: var(--color-0);
+  color: var(--color-11);
+}
+
+.quote-data {
+  border-radius: 0 5px 5px 0;
+  background: var(--color-0) url("../../img/dec/bottom-right.svg") no-repeat
+    bottom 20px right 20px;
+}
+
+.quote-data label {
+  font:
+    400 1rem/1.5 "Inter",
+    sans-serif;
+}
+
+.quote-content {
+  display: none;
+}
+
+.quote-content h2,
+.quote-data h2:nth-of-type(n + 2) {
+  margin-top: 20px;
+}
+
+#keyboard:checked ~ #quote-keyboard,
+#subscription:checked ~ #quote-subscription {
+  display: grid;
+  gap: 20px;
+}
+
+.quote-detail {
+  display: none;
+  background: var(--color-0);
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.quote-detail li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.quote-detail li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.quote-product input:checked + label + .quote-detail {
+  display: grid;
+}
+
+.terms-accept {
+  display: flex;
+  align-content: center;
+}
+
+.terms-accept label {
+  margin-top: 6px;
+  font:
+    400 0.95rem/1.5 "Inter",
+    sans-serif;
+  color: var(--color-8);
+}
+
+.terms-accept-link {
+  text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  .quote-product,
+  .quote-data {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .quote {
+    grid-template-columns: 1fr;
+  }
+  .quote-data {
+    border-radius: 0 0 5px 5px;
+  }
+  .quote-product {
+    border-radius: 5px 5px 0 0;
+    background: var(--color-12);
+  }
+}
+
+@media (max-width: 400px) {
+  .quote-product {
+    grid-template-columns: 1fr;
+  }
+}
