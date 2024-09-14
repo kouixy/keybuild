@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,6 +8,7 @@
       content="Explore our range of high-quality mechanical keyboards, designed for gaming enthusiasts and professionals. Discover customizable options, ergonomic designs, and durable switches to enhance your typing experience."
     />
     <title>Keybuild - Crafted Keyboards</title>
+    <link href="css/style.css" rel="preload" as="style" />
     <link href="css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +21,7 @@
   <body>
     <header class="header-bg">
       <div class="header container">
-        <h1 class="logo"><a href="./">Keybuild</a></h1>
+        <h1 class="logo font-2-2xl"><a href="./">Keybuild</a></h1>
         <nav aria-label="primary">
           <ul class="header-menu font-1-m color-0">
             <li><a href="./keyboards.html">Keyboard</a></li>
@@ -46,12 +47,18 @@
           </p>
           <a href="./keyboards.html" class="button">Choose your Keyboard</a>
         </div>
-        <div>
+        <picture>
+          <source
+            media="(max-width: 800px)"
+            srcset="./img/hero-keyboard-white.png"
+          />
           <img
             src="./img/hero-keyboard-white.png"
+            width="1280"
+            height="1060"
             alt="Example Mechanical Keyboard"
           />
-        </div>
+        </picture>
       </div>
     </main>
 

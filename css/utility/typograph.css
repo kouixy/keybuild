@@ -81,6 +81,12 @@
     sans-serif;
 }
 
+.font-2-2xl {
+  font:
+    600 2rem/1.125 var(--font-2),
+    sans-serif;
+}
+
 @media (max-width: 1200px) {
   .font-1-2xl {
     font-size: 3rem;
